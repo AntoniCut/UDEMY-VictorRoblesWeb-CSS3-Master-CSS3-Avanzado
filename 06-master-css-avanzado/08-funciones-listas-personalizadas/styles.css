@@ -1,0 +1,28 @@
+/*  ***********************************  */
+/*  **********  /styles.css  **********  */
+/*  ***********************************  */
+
+.caja {
+    width: clamp(200px, 40%, 500px); 
+    height: clamp(200px, 40%, 500px); 
+    height: clamp(200px, 40%, 500px); 
+    border: 2px solid red;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.lista-Imagen li {
+    list-style-image: url(./css-icon.png);
+    list-style-position: inside;
+}
+
+.lista-type li {
+    list-style-type:disclosure-closed;
+}
+
+.lista-type li::marker {
+    color: red;
+    font-size: 25px;
+}

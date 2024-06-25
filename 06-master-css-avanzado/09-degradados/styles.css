@@ -1,0 +1,94 @@
+/*  ***********************************  */
+/*  **********  /styles.css  **********  */
+/*  ***********************************  */
+
+.cajas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}    
+
+.caja {
+    width: 450px;
+    height: 500px;
+    line-height: 500px;
+    border: 2px solid red;
+    gap: 20px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/*  **********  Gradientes Lineales  **********  */
+
+.caja1 {
+    background: linear-gradient(to top, orange, red);
+}
+
+.caja2 {
+    background: linear-gradient(to bottom, orange, red);
+}
+
+.caja3 {
+    background: linear-gradient(to left, orange, red);
+}
+
+.caja4 {
+    background: linear-gradient(to right, orange, red);
+}
+
+.caja5 {
+    background: linear-gradient(to bottom left, orange, red);
+}
+
+.caja6 {
+    background: linear-gradient(to right top,orange, red);
+}
+
+.caja7 {
+    /* background: linear-gradient(to right, orange 75%, red 25%); */
+    background: linear-gradient(to right,orange 75%, red 25%);
+}
+
+.caja8 {
+    background: repeating-linear-gradient(to bottom, orange, red);
+    background-size: 30px 30px;
+}
+
+
+/*  **********  Gradientes Radiales  **********  */
+
+.caja9 {
+    background: radial-gradient(ellipse,orange, red)
+}
+
+.caja10 {
+    background: radial-gradient(circle 100px, orange, red, lightblue);
+}
+
+.caja11 {
+    background: radial-gradient(farthest-corner at 50px 50px, orange, red, lightblue);
+}
+
+.caja12 {
+    background: radial-gradient(closest-corner at 50px 150px, orange, red, lightblue);
+}
+
+.caja13 {
+    background: radial-gradient(circle at top, orange, red, lightblue);
+}
+
+.caja14 {
+    background: radial-gradient(circle at bottom, orange, red, lightblue);
+}
+
+.caja15 {
+    background: radial-gradient(circle at left, orange, red, lightblue);
+}
+
+.caja16 {
+    background: radial-gradient(circle at right, orange, red, lightblue);
+}
