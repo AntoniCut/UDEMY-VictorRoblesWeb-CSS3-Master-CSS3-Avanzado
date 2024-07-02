@@ -7,37 +7,432 @@
     <title> Agencia Desarrollo Web | Master CSS Avanzado - Victor Robles Web </title>
 
     <!--  **********  Importacion de Fuentes  **********  -->
-    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" >
-    <link rel="stylesheet" href="./assets/fonts/dmsans/dmsans.css" >
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/dmsans/dmsans.css">
 
     <!--  **********  Importacion de Hojas de Estilos  **********  -->
-    <link rel="stylesheet" href="./assets/css/reset.css" >
-    <link rel="stylesheet" href="./assets/css/styles.css" >
-           
-    
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+
     <!--  **********  Importacion Archivos JS  **********  -->
     <script> </script>
-     
+
 </head>
 
 
 <body>
-    
-    <!-- <h1> Maquetacion Web 2 </h1> -->
 
+
+    <!--  ****************************************  -->
+    <!--  **********  LAYOUT PRINCIPAL  **********  -->
+    <!--  ****************************************  -->
     <div class="layout">
 
+
+        <!--  ****************************  -->
         <!--  **********  MENU  **********  -->
+        <!--  ****************************  -->
+        <section class="layout__menu">
+
+            <!--  *****  Barra del Menu  *****-->
+            <div class="menu__navbar">
+
+                <!--  -----  Logo  -----  -->
+                <div class="navbar__logo">
+
+                    <a href="#" class="navbar__link-logo">
+                        <img src="./assets/img/logo1.png" class="navbar__logo-light">
+                    </a>
+
+                </div>
+
+                <!--  -----  Navegación  -----  -->
+                <nav class="navbar__nav">
+
+                    <!--  -----  Lista de Navegación  ------->
+                    <ul class="nav__list">
+
+                        <!--  -----  1ª. Elemento li 'Inicio'  -----  -->
+                        <li class="nav__item">
+                            <a href="#" class="nav__title"> Inicio </a>
+                        </li>
+
+                        <!--  -----  2º. Elemento li 'Servicios'  -----  -->
+                        <li class="nav__item">
+                            <a href="#" class="nav__title">
+                                Servicios
+                                <i class="fa-solid fa-chevron-down nav__icon"> </i>
+
+                                <!--  -----  Submenu  ------->
+                                <ul class="nav__submenu">
+
+                                    <!--  1º li del Submenu  -->
+                                    <li class="submenu__item">
+                                        <a class="submenu__title">
+                                            Diseño Web
+                                        </a>
+                                    </li>
+
+                                    <!--  2º li del Submenu  -->
+                                    <li class="submenu__item">
+                                        <a class="submenu__title">
+                                            Desarrollo Web
+                                        </a>
+                                    </li>
+
+                                    <!--  3º li del Submenu  -->
+                                    <li class="submenu__item">
+                                        <a class="submenu__title">
+                                            Diseño de Apps
+                                        </a>
+                                    </li>
+
+                                    <!--  4º li del Submenu  -->
+                                    <li class="submenu__item">
+                                        <a class="submenu__title">
+                                            Programación
+                                        </a>
+                                    </li>
+
+                                    <!--  5º li del Submenu  -->
+                                    <li class="submenu__item">
+                                        <a class="submenu__title">
+                                            Consultoría
+                                        </a>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
 
 
+                        <!--  -----  3º. Elemento li 'Portafolio'  -----  -->
+                        <li class="nav__item">
 
+                            <a href="#" class="nav__title">
+                                Servicios
+                                <i class="fa-solid fa-chevron-down nav__icon"> </i>
+
+                                <!--  -----  Submenu  ------->
+                                <ul class="nav__submenu">
+
+                                    <!--  1º li del Submenu  -->
+                                    <li class="submenu__item">
+                                        <a class="submenu__title">
+                                            Diseño Web
+                                        </a>
+                                    </li>
+
+                                    <!--  2º li del Submenu  -->
+                                    <li class="submenu__item">
+                                        <a class="submenu__title">
+                                            Desarrollo Web
+                                        </a>
+                                    </li>
+
+                                    <!--  3º li del Submenu  -->
+                                    <li class="submenu__item">
+                                        <a class="submenu__title">
+                                            Diseño de Apps
+                                        </a>
+                                    </li>
+
+                                    <!--  4º li del Submenu  -->
+                                    <li class="submenu__item">
+                                        <a class="submenu__title">
+                                            Programación
+                                        </a>
+                                    </li>
+
+                                    <!--  5º li del Submenu  -->
+                                    <li class="submenu__item">
+                                        <a class="submenu__title">
+                                            Consultoría
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </a>
+                        </li>
+
+
+                        <!--  -----  4º. Elemento li 'Blog'  -----  -->
+                        <li class="nav__item">
+
+                            <a href="#" class="nav__title">
+                                Servicios
+                                <i class="fa-solid fa-chevron-down nav__icon"> </i>
+
+                                <!--  -----  Submenu  ------->
+                                <ul class="nav__submenu">
+
+                                    <!--  1º li del Submenu  -->
+                                    <li class="submenu__item">
+                                        <a class="submenu__title">
+                                            Diseño Web
+                                        </a>
+                                    </li>
+
+                                    <!--  2º li del Submenu  -->
+                                    <li class="submenu__item">
+                                        <a class="submenu__title">
+                                            Desarrollo Web
+                                        </a>
+                                    </li>
+
+                                    <!--  3º li del Submenu  -->
+                                    <li class="submenu__item">
+                                        <a class="submenu__title">
+                                            Diseño de Apps
+                                        </a>
+                                    </li>
+
+                                    <!--  4º li del Submenu  -->
+                                    <li class="submenu__item">
+                                        <a class="submenu__title">
+                                            Programación
+                                        </a>
+                                    </li>
+
+                                    <!--  5º li del Submenu  -->
+                                    <li class="submenu__item">
+                                        <a class="submenu__title">
+                                            Consultoría
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </a>
+
+                        </li>
+
+
+                        <!--  -----  5º. Elemento li 'Equipo'  -----  -->
+                        <li class="nav__item">
+                            <a href="#" class="nav__title"> Equipo </a>
+                        </li>
+
+
+                        <!--  -----  6º. Elemento li 'Contacto'  -----  -->
+                        <li class="nav__item">
+                            <a href="#" class="nav__title"> Contacto </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </section>
+        <!--  ***********************************************************************************************************************  -->
+
+
+        <!--  ******************************  -->
         <!--  **********  BANNER  **********  -->
+        <!--  ******************************  -->
+        <section class="layout__banner">
+
+            <!--  **********  Contenido del 'Banner'  **********  -->
+            <div class="banner__content">
+
+                <!--  *****  Titulo  *****  -->
+                <h1 class="banner__title"> Diseño & Desarrollo web </h1>
+
+                <!--  *****  Botón  *****  -->
+                <a href="#" class="banner__btn"> Ver trabajos </a>
+
+                <!--  *****  Formas e Imagenes del Banner. Elementos Dinámicos  *****  -->
+                <div class="banner__shapes">
+
+                    <ul class="shapes__list">
+
+                        <!--  -----  Forma 1  -----  -->
+                        <li class="shapes__item shapes__item--shape1">
+                            <div class="shapes__container">
+                                <img class="shapes__img" src="assets/img/banner-shape-1.png">
+                            </div>
+                        </li>
+
+                        <!--  -----  Forma 2  -----  -->
+                        <li class="shapes__item shapes__item--shape2">
+                            <div class="shapes__container">
+                                <img class="shapes__img" src="assets/img/banner-shape-2.png">
+                            </div>
+                        </li>
+
+                        <!--  -----  Forma 3  -----  -->
+                        <li class="shapes__item shapes__item--shape3">
+                            <div class="shapes__container">
+                                <img class="shapes__img" src="assets/img/bubble-16.png">
+                            </div>
+                        </li>
+
+                        <!--  -----  Forma 4  -----  -->
+                        <li class="shapes__item shapes__item--shape4">
+                            <div class="shapes__container">
+                                <img class="shapes__img" src="assets/img/bubble-15.png">
+                            </div>
+                        </li>
+
+                        <!--  -----  Forma 5  -----  -->
+                        <li class="shapes__item shapes__item--shape5">
+                            <div class="shapes__container">
+                                <img class="shapes__img" src="assets/img/bubble-14.png">
+                            </div>
+                        </li>
+
+                        <!--  -----  Forma 6  -----  -->
+                        <li class="shapes__item shapes__item--shape6">
+                            <div class="shapes__container">
+                                <img class="shapes__img" src="assets/img/bubble-16.png">
+                            </div>
+                        </li>
+
+                        <!--  -----  Forma 7  -----  -->
+                        <li class="shapes__item shapes__item--shape7">
+                            <div class="shapes__container">
+                                <img class="shapes__img" src="assets/img/bubble-26.png">
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+        <!--  ***********************************************************************************************************************  -->
 
 
+        <!--  *********************************  -->
         <!--  **********  SERVICIOS  **********  -->
+        <!--  *********************************  -->
+        <section class="layout__services">
+
+            <!--  **********  Grid de los Servicios  **********  -->
+            <div class="services__grid">
+
+                <!--  **********  Encabezado de Servicios  **********  -->
+                <div class="services__header">
+
+                    <p class="services__subtitle"> ¿Que podemos hacer por tí? </p>
+                    <h2 class="services__title"> Servicios que te <br> pueden ayudar </h2>
+
+                    <!--  *****  Articulos de los Servicios  *****  -->
+                    <div class="services__list">
+
+                        <!--  -----  Articulo 1  -----  -->
+                        <article class="services__service services__service--bottom">
+                            <!--  Contenedor Imagen  -->
+                            <div class="service__container-img">
+                                <!--  Imagen del Servicio  -->
+                                <img class="service__img" src="assets/img/icon-1.png" alt="Diseño">
+                            </div>
+                            <!--  Contenedor Contenido del Servicio-->
+                            <div class="service__content">
+                                <h3 class="service__title">
+                                    <a href="#" class="service__link"> Diseño </a>
+                                </h3>
+                                <p class="service__description">
+                                    Desde una web, pasando por una app, hasta un logotipo...
+                                </p>
+                                <a href="#" class="service__more"> Leer más </a>
+                            </div>
+                        </article>
 
 
+                        <!--  -----  Articulo 2  -----  -->
+                        <article class="services__service services__service--middle">
+                            <!--  Contenedor Imagen  -->
+                            <div class="service__container-img">
+                                <!--  Imagen del Servicio  -->
+                                <img class="service__img" src="assets/img/icon-2.png" alt="Diseño">
+                            </div>
+                            <!--  Contenedor Contenido del Servicio  -->
+                            <div class="service__content">
+                                <h3 class="service__title">
+                                    <a href="#" class="service__link"> Desarrollo </a>
+                                </h3>
+                                <p class="service__description">
+                                    Las aplicaciones web y moviles que imaginas a medida...
+                                </p>
+                                <a href="#" class="service__more"> Leer más </a>
+                            </div>
+                        </article>
+
+
+                        <!--  -----  Articulo 3  -----  -->
+                        <article class="services__service services__service--top">
+                            <!--  Contenedor Imagen  -->
+                            <div class="service__container-img">
+                                <!--  Imagen del Servicio  -->
+                                <img class="service__img" src="assets/img/icon-3.png" alt="Diseño">
+                            </div>
+                            <!--  Contenedor Contenido del Servicio  -->
+                            <div class="service__content">
+                                <h3 class="service__title">
+                                    <a href="#" class="service__link"> Marketing online </a>
+                                </h3>
+                                <p class="service__description">
+                                    Le damos visibilidad a tu proyecto digital...
+                                </p>
+                                <a href="#" class="service__more"> Leer más </a>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--  **********  Grid de los Shapes  **********  -->
+            <ul class="services__service-shapes">
+
+                <!--  *****  Shape 1  *****  -->
+                <li class="services-shapes__item services-shapes--shape1">
+                    <div class="service-shapes__container">
+                        <img class="service-shapes__img" src="assets/img/circle-2.png">
+                    </div>
+                </li>
+
+                <!--  *****  Shape 2  *****  -->
+                <li class="services-shapes__item services-shapes--shape1">
+                    <div class="service-shapes__container">
+                        <img class="service-shapes__img" src="assets/img/bubble-2.png">
+                    </div>
+                </li>
+
+                <!--  *****  Shape 3  *****  -->
+                <li class="services-shapes__item services-shapes--shape1">
+                    <div class="service-shapes__container">
+                        <img class="service-shapes__img" src="assets/img/bubble-1.png">
+                    </div>
+                </li>
+
+            </ul>
+
+        </section>
+        <!--  ***********************************************************************************************************************  -->
+
+
+        <!--  *********************************  -->
         <!--  **********  PROYECTOS  **********  -->
+        <!--  *********************************  -->
+
+
+
+
+
+
+
+
+
+
+        <!--  ***********************************************************************************************************************  -->
 
 
 
@@ -84,4 +479,5 @@
 
 
 </body>
+
 </html>
