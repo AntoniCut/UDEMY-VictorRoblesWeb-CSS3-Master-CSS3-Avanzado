@@ -35,6 +35,7 @@ ul, ol {
 a {
     display: block;
     text-decoration: none;
+    color: black;
     /* color: var(--color-principal);       lo he puesto yo */
 }
 
