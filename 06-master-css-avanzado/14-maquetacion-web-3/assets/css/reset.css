@@ -45,7 +45,7 @@ ul, ol {
 a {
     display: block;
     text-decoration: none;
-    color: var(--color-principal);
+    /* color: var(--color-principal); */
 }
 
 p a {
