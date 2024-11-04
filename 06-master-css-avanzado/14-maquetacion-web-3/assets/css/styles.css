@@ -385,50 +385,6 @@ body {
     color: var(--color-principal);
 }
 
-.carousel-games__info {
-    position: absolute;
-    top: 40%;
-    text-align: center;
-    padding: 0 1rem;
-    transition: all 300ms ease;
-}
-
-.carousel-games__category {
-    display: block;
-    font-size: 1.1rem;
-    font-weight: 500;
-    text-shadow: 1px 1px 3px var(--color-titles);
-    color: var(--color-principal);
-    transition: all 300ms ease;
-}
-
-.carousel-games__category:hover {
-    color: var(--color--secondary);
-}
-
-.carousel-games__line {
-    width: 4rem;
-    height: 0.2rem;
-    margin: 0.4rem auto;
-    background-color: var(--color--secondary);
-}
-
-.carousel-games__title {
-    font-size: 1.8rem;
-    text-shadow: 1px 1px 3px var(--color-titles);
-}
-
-.carousel-games__link {
-    color: var(--color-principal);
-    transition: all 300ms ease;
-}
-
-.carousel-games__title:hover .carousel-games__link {
-    color: var(--color--secondary);
-}
-
-
-
 
 
 /*  ************************  */
@@ -510,9 +466,9 @@ body {
     grid-area: slider;
     width: 100%;
     margin-bottom: 3rem;
-    
+
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "slider1 slider3 slider3 slider4 "
         "slider2 slider3 slider3 slider5"
     ;
@@ -566,7 +522,8 @@ body {
 }
 
 .slider__info a {
-    color: var(--color-principal);  /* color enlaces */
+    color: var(--color-principal);
+    /* color enlaces */
 }
 
 .slider__category {
@@ -670,7 +627,7 @@ body {
     transition: all 300ms;
 }
 
-.highlights__title:hover > .highlights__link {
+.highlights__title:hover>.highlights__link {
     color: var(--color--secondary);
 }
 
@@ -682,9 +639,14 @@ body {
     margin: 1rem 0;
 }
 
+
+/*  *****  estilos compartidos  *****  */
+
 .highlights__author,
 .main-video__author,
-.video__author {
+.video__author,
+.main-post__container-author,
+.news__author {
     font-weight: 500;
     color: var(--color--secondary);
     font-size: 1.3rem;
@@ -693,7 +655,9 @@ body {
 
 .highlights__date,
 .main-video__date,
-.video__date {
+.video__date,
+.main-post__date,
+.news__date {
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -709,40 +673,46 @@ body {
 }
 
 .highlights__footer-post,
-.footer-post__container {
+.footer-post__container,
+.footer-info__container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
 }
 
-.footer-post__container {
+.footer-post__container,
+.footer-info__container {
     gap: 1rem;
 }
-
 
 .footer-post__views,
 .footer-post__comments,
 .main-video__views,
-.main-video__comments {
+.main-video__comments,
+.main-post__views,
+.main-post__comments {
     display: inline-block;
     font-size: 1.2rem;
     font-weight: 400;
     color: var(--color-text-marquee);
 }
 
-.footer-post__comments > a {
+.footer-post__comments>a {
     display: inline;
 }
 
-.footer-post__views > .fa-solid,
-.footer-post__comments > .fa-solid,
-.main-video__views > .fa-solid,
-.main-video__comments > .fa-solid {
+.footer-post__views>.fa-solid,
+.footer-post__comments>.fa-solid,
+.main-video__views>.fa-solid,
+.main-video__comments>.fa-solid,
+.main-post__views>.fa-solid,
+.main-post__comments>.fa-solid {
     margin-right: 0.2rem;
     font-size: 1.2rem;
 }
 
-.footer-post__read-more {
+.footer-post__read-more,
+.main-post__read-more {
     border: 1px solid var(--color-text-marquee);
     font-size: 1.1rem;
     font-weight: 500;
@@ -752,16 +722,19 @@ body {
     color: var(--color-text-marquee);
 }
 
-.footer-post__read-more a {
+.footer-post__read-more a,
+.main-post__btn {
     color: var(--color--secondary);
 }
 
-.footer-post__read-more:hover {
+.footer-post__read-more:hover,
+.main-post__read-more:hover {
     border: 1px solid var(--color--secondary);
     color: var(--color--secondary);
     font-weight: bold;
 }
 
+/*  ********************  */
 
 
 /*  ****************************  */
@@ -790,7 +763,7 @@ body {
     margin-bottom: 2rem;
 }
 
-.main-video__yt-video > iframe {
+.main-video__yt-video>iframe {
     width: 100%;
     height: 100%;
 }
@@ -905,15 +878,225 @@ body {
     height: 4rem;
 }
 
+.carousel-games__info {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    padding: 0 1rem;
+    transition: all 300ms ease;
+}
+
+.carousel-games__category {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px var(--color-titles);
+    color: var(--color-principal);
+    transition: all 300ms ease;
+}
+
+.carousel-games__category:hover {
+    color: var(--color--secondary);
+}
+
+.carousel-games__line {
+    width: 4rem;
+    height: 0.2rem;
+    margin: 0.4rem auto;
+    background-color: var(--color--secondary);
+}
+
+.carousel-games__title {
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 3px var(--color-titles);
+}
+
+.carousel-games__link {
+    color: var(--color-principal);
+    transition: all 300ms ease;
+}
+
+.carousel-games__title:hover .carousel-games__link {
+    color: var(--color--secondary);
+}
+
+
+
+
+
+/*  ****************************  */
+/*  **********  MAIN  **********  */
+/*  ****************************  */
+
+.layout__main {
+    grid-area: main;
+    margin-right: 3rem;
+}
+
+
+
+/*  **********************  */
+/*  *****  NOTICIAS  *****  */
+/*  **********************  */
+
+.main__news {
+    width: 100%;
+}
+
+.news__main-post {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding-bottom: 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--color-bg-marquee);
+}
+
+.main-post__image {
+    position: relative;
+    overflow: hidden;
+    flex-basis: 50%;
+    height: 20rem;
+}
+
+.main-post__img {
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+.main-post__img:hover {
+    transform: scale(1.1);
+}
+
+.main-post__container-category {
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color--secondary);
+    transition: all 300ms ease-in-out;
+}
+
+.main-post__container-category:hover {
+    background-color: var(--color-bg-navbar);
+}
+
+.main-post__category {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--color-principal);
+}
+
+
+.main-post__info {
+    flex-basis: 50%;
+}
+
+.main-post__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.main-post__link-title {
+    color: var(--color-titles);
+    transition: all 300ms ease-in-out;
+}
+
+.main-post__title:hover .main-post__link-title {
+    color: var(--color--secondary);
+}
+
+
+.main-post__meta,
+.news__data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.main-post__description {
+    margin-bottom: 1rem;
+    color: var(--color-titles);
+}
+
+.main-post__footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.news__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-bottom: 6rem;
+}
+
+.new__post {
+    display: flex;
+    gap: 1rem;
+    flex-basis: calc(50% - 2rem);
+    
+}
+
+
+.news__image {
+    overflow: hidden;
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.news__img {
+    width: 100%;
+    height: 100%;
+    transition: all 300ms;
+}
+
+.news__image:hover .news__img {
+    transform: scale(1.1);
+}
+
+.news__detail {
+    width: 75%;
+}
+
+.news__title-post {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.news__link-title {
+    color: var(--color-titles);
+    transition: all 300ms ease-in-out;
+}
+
+.news__link-title:hover {
+    color: var(--color--secondary);
+}
+
+.news__data {
+    justify-content: left;
+    gap: 1rem;
+}
+ 
 
 
 
 
 
 
-
-
-
+/*  *****  ASIDE  *****  */
+.layout__aside {
+    grid-area: aside;
+}
 
 
 
@@ -947,44 +1130,4 @@ body {
     padding: 0.5rem;
     color: var(--color-principal);
     background-color: var(--color--secondary);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  *****  MAIN  *****  */
-.layout__main {
-    grid-area: main;
-}
-
-
-/*  *****  ASIDE  *****  */
-.layout__aside {
-    grid-area: aside;
 }
