@@ -593,7 +593,8 @@ body {
     transform: scale(1.1);
 }
 
-.highlights__category {
+.highlights__category,
+.game__container-category {
     position: absolute;
     left: 0;
     bottom: 1rem;
@@ -603,11 +604,13 @@ body {
     transition: all 300ms;
 }
 
-.highlights__category:hover {
+.highlights__category:hover,
+.game__container-category:hover {
     background-color: var(--color-bg-navbar);
 }
 
-.highlights__name-category {
+.highlights__name-category,
+.game__category {
     display: block;
     font-size: 1.1rem;
     font-weight: bold;
@@ -1086,14 +1089,84 @@ body {
     justify-content: left;
     gap: 1rem;
 }
- 
 
 
 
+/*  ********************  */
+/*  *****  JUEGOS  *****  */
+/*  ********************  */
+
+.main__games {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.games__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.games__game {
+    position: relative;
+    flex-basis: calc(50% - 1.5rem);
+}
+
+.game__container-image {
+    overflow: hidden;
+}
+
+.game__img {
+    width: 100%;
+    transition: all 300ms;
+}
+
+.game__img:hover {
+    transform: scale(1.1);
+}
+
+.game__rating {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 9;
+}
+
+.game__details {
+    width: 100%;
+    min-height: 6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+    padding-right: 5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.game__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.game__link-title {
+    color: var(--color-principal);
+    transition: all 300ms ease;
+}
+
+.game__title:hover  .game__link-title {
+    text-shadow: 0 0 5px black;
+}
 
 
 
+/*  *******************  */
 /*  *****  ASIDE  *****  */
+/*  *******************  */
+
 .layout__aside {
     grid-area: aside;
 }
@@ -1103,7 +1176,7 @@ body {
 /*  *****  Estilos SubEncabezados  *****  */
 
 .news__subheader,
-.games____subheader,
+.games__subheader,
 .login__subheader,
 .posts__subheader,
 .recent__subheader,
