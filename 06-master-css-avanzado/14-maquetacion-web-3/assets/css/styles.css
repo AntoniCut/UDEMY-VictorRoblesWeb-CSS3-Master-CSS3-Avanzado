@@ -1342,10 +1342,6 @@ body {
     background-color: var(--color-linkedin);
 }
 
-
-
-
-
 .social__link {
     display: flex;
     flex-direction: row;
@@ -1371,6 +1367,42 @@ body {
     line-height: 1;
     opacity: 0.75;
 }
+
+
+/*  *****  Ultimos Tweets  *****  */
+
+.aside__tweets {
+    font-size: 1.3rem;
+    padding: 1.2rem;
+    margin-bottom: 3rem;
+    color: var(--color-principal);
+    background-color: var(--color-twitter);
+}
+
+.tweets__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.tweets__header .fa-brands {
+    margin-right: 1rem;
+}
+
+.tweets__title {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.tweets__content {
+    margin-bottom: 3rem;
+    hyphens: auto;
+}
+
 
 
 
