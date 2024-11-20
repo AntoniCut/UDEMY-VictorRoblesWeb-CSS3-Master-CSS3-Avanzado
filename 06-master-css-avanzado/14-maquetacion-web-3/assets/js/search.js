@@ -25,13 +25,4 @@ document.addEventListener('DOMContentLoaded', () => {
             searchInput.classList.add('visible');
         }
     });
-
-
-    //  -----  Funcionalidad de la Marquesina  -----
-    
-
 });
-
-
-
-
