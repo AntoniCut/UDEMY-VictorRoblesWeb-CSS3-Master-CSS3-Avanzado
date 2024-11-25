@@ -69,14 +69,14 @@ body {
 .layout {
     display: grid;
     grid-template-areas:
-        "header   header"
-        "nav      nav"
-        "marquee  marquee"
-        "slider   slider"
+        "header    header"
+        "nav       nav"
+        "marquee   marquee"
+        "slider    slider"
         "high      high"
-        "videos   videos"
-        "carousel carousel"
-        "main     aside"
+        "videos    videos"
+        "carousel  carousel"
+        "main      aside"
     ;
     grid-template-columns: 70% 30%;
     width: 55vw;

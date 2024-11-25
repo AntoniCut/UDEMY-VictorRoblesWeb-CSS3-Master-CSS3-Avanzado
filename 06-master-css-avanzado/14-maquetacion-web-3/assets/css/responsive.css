@@ -35,7 +35,32 @@
 /*  *****  Menor a 1024px  *****  */
 @media (max-width: 1024px) {
 
+    /*  -----  Layout  -----  */
+    .layout {
+        width: 70%;
+        min-width: 74rem;
+        margin: 0 auto;
+        grid-template-areas:
+            "header    header"
+            "nav       nav"
+            "marquee   marquee"
+            "slider    slider"
+            "high      high"
+            "videos    videos"
+            "carousel  carousel"
+            "main      main"
+            "aside     aside"
+        ;
+    }
 
+    /*  -----  Cabecera  -----  */
+    .layout__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    
     /*  -----  Menú Escritorio  -----  */
     .navbar__list {
         display: none;
@@ -49,7 +74,7 @@
 
 
     /*  -----  Menú Movil  -----  */
-    
+
     .navbar__mobile-list {
         /* display: block; */
         display: none;
@@ -94,9 +119,9 @@
         font-weight: bold;
     }
 
-    
+
     /*  -----  Submenú Movil  -----  */
-    
+
     .mobile-list__msubmenu {
         /* display: block; */
         display: none;
