@@ -35,6 +35,7 @@
 /*  *****  Menor a 1024px  *****  */
 @media (max-width: 1024px) {
 
+
     /*  -----  Layout  -----  */
     .layout {
         width: 70%;
@@ -174,7 +175,8 @@
     }
 
     .highlights__post {
-        width: calc(50% - 1.5rem);
+        flex-basis: calc(50% - 1.5rem);
+        /* width: calc(50% - 1.5rem); */
     }
 
 
@@ -197,6 +199,22 @@
         width: calc(50% - 1rem);
     }
 
+
+    /*  -----  carousel juegos  -----  */
+    .carousel-games__item {
+        width: 100%;
+    }
+
+    .carousel-games__item--hiden {
+        display: none;
+    }
+
+
+    /*  -----  Barra Lateras  --  Aside  -----  */
+
+    .layout__aside {
+        margin-bottom: 3rem;
+    }
 
 
 }
