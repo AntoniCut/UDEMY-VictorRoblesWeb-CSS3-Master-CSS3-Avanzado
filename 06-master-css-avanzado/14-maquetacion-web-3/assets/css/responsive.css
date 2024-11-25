@@ -151,11 +151,6 @@
         ;
     }
 
-    /* .slider__container--slider1 {
-        width: 100%;
-        height: 33.8rem;
-    } */
-    
     .slider__container--slider2 {
         width: 100%;
         height: 16.8rem;
@@ -170,6 +165,38 @@
         width: 100%;
         height: 23.6rem;
     }
+
+    
+    /*  -----  Mejores Momentos  -----  */
+
+    .highlights__posts {
+        flex-wrap: wrap;
+    }
+
+    .highlights__post {
+        width: calc(50% - 1.5rem);
+    }
+
+
+    /*  -----  Videos  -----  */
+
+    .videos__container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .videos__list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .videos__video {
+        width: calc(50% - 1rem);
+    }
+
 
 
 }
