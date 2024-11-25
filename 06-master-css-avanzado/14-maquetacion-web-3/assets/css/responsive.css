@@ -217,4 +217,30 @@
     }
 
 
+    /*  -----  Footer  -----  */
+
+    .footer__container {
+        width: 70%;
+        min-width: 70%;
+        flex-direction: column;
+    }
+
+    .footer__left-container,
+    .footer__center-container,
+    .footer__right-container {
+        width: 100%;
+    }
+
+    .footer__fslider {
+        width: auto;
+        height: auto;
+    }
+
+    .footer__text {
+        text-align: center;
+        margin: 0;
+    }
+    
+
+
 }
